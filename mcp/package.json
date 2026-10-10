@@ -1,0 +1,18 @@
+{
+  "name": "filmcraft-mcp-lite",
+  "version": "0.1.0",
+  "description": "Token-lean MCP server that drives the running FilmCraft app over its JSON control channel.",
+  "type": "module",
+  "bin": { "filmcraft-mcp": "src/server.mjs" },
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "smoke": "node test/smoke.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT OR Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.1",
+    "zod": "4.6.5"
+  }
+}
